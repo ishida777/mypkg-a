@@ -8,7 +8,7 @@ class Talker():
         self.n = 0
         node.create_timer(0.5, self.cb)
 
-    def cb():
+    def cb(self):
         msg = Int16()
         msg.data = self.n
         self.pub.publisher(msg)
