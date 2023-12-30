@@ -24,6 +24,7 @@ def main():
                 node.get_logger().info("age: {}".format(response.age))
 
             break
+
     node.destroy_node()
     rclpy.shutdown()
 
