@@ -11,7 +11,7 @@ class Talker():
     def cb(self):
         msg = Int16()
         msg.data = self.n
-        self.pub.publisher(msg)
+        self.pub.publish(msg)
         self.n += 1
 
 def main():
